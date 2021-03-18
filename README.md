@@ -284,3 +284,15 @@ WHERE unidades > 5 AND fecha = TO_DATE('4/1/18'); <br>
 SELECT npedido, cliente, fecha, total_pedido, forma_pago, descripcion <br>
 FROM pedido<br>
 FULL JOIN forma_pago USING(forma_pago);<br>
+
+------------------------------------------------------------------------
+
+SELECT npedido, cliente, fecha, total_pedido, forma_pago, descripcion <br>
+FROM pedido <br>
+LEFT OUTER JOIN forma_pago USING(forma_pago); <br>
+
+-------------------------------------------------------------------------
+
+SELECT npedido, cliente, fecha, total_pedido, forma_pago, descripcion <br> 
+FROM pedido <br>
+RIGHT OUTER JOIN forma_pago USING(forma_pago); <br>
